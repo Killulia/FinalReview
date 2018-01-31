@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import static android.content.Context.BIND_AUTO_CREATE;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button startService;
     private Button stopService;
@@ -66,5 +68,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
+    }
+
+    public Button getBindService() {
+        return bindService;
     }
 }
