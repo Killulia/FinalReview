@@ -71,6 +71,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public Button getBindService() {
+
         return bindService;
+
+    }
+
+    public void Test(){
+        System.out.println("test");
     }
 }
